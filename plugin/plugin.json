@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "codex-quota-battery",
+  "version": "1.1.1",
+  "description": "Windows Codex 透明额度电池条与重置卡库存，随 Codex 加载和退出。",
+  "author": { "name": "Local workspace" },
+  "license": "MIT",
+  "keywords": ["codex", "quota", "battery", "windows"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Codex 额度电池条",
+        "shortDescription": "顶部透明电池与重置卡库存",
+        "longDescription": "Windows 本机伴随插件。在帮助菜单右侧显示剩余额度和重置卡库存。通过 Codex 托管的本地 MCP 进程加载，Codex 退出后结束，不设置 Windows 登录启动。",
+        "developerName": "Local workspace",
+        "category": "Productivity",
+        "capabilities": ["Read"],
+        "logo": "./assets/icon.svg",
+        "composerIcon": "./assets/icon.svg"
+      }
+    }
+  }
+}

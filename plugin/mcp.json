@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "quota-battery": {
+      "type": "stdio",
+      "command": "./bin/CodexQuotaBattery.exe",
+      "args": ["--mcp"],
+      "cwd": "./"
+    }
+  }
+}
