@@ -1,0 +1,10 @@
+{
+  "name": "codex-quota-tools",
+  "interface": { "displayName": "Codex 额度工具" },
+  "plugins": [{
+    "name": "codex-quota-battery",
+    "source": { "source": "local", "path": "./plugin" },
+    "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+    "category": "Productivity"
+  }]
+}
